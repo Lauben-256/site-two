@@ -14,6 +14,9 @@
     <!-- font awesome icons -->
     <link rel="stylesheet" href="/site-two/css/all.min.css">
 
+    <!-- Magnific Popup css file -->
+    <link rel="stylesheet" href="/site-two/vendor/Magnific-Popup/dist/jquery.magnific-popup.min.js">
+
     <!-- Custom css file -->
     <link rel="stylesheet" href="/site-two/css/style.css">
 </head>
@@ -289,18 +292,20 @@
         </div>
 
         <div class="button-group">
-          <button type="button" class="active">All</button>
+          <button type="button" class="active" id="btn1">All</button>
           <button type="button" data-filter=".popular">Popular</button>
           <button type="button" data-filter=".latest">Latest</button>
-          <button type="button" data-filter="">Following</button>
-          <button type="button" data-filter="">Upcoming</button>
+          <button type="button" data-filter=".following">Following</button>
+          <button type="button" data-filter=".upcoming">Upcoming</button>
         </div>
 
         <div class="row grid">
           <div class="col-lg4 col-md-6 col-sm-12 element-item latest">
             <div class="our-project">
               <div class="img">
-                <img src="/site-two/img/portfolio/p1.jpg" alt="portfolio-1">
+                <a class="test-popup-link" href="/site-two/img/portfolio/p1.jpg">
+                  <img src="/site-two/img/portfolio/p1.jpg" alt="portfolio-1">
+                </a>
               </div>
               <div class="title py-4">
                 <h4 class="text-uppercase">Minimum Design</h4>
@@ -311,7 +316,9 @@
           <div class="col-lg4 col-md-6 col-sm-12 element-item popular">
             <div class="our-project">
               <div class="img">
-                <img src="/site-two/img/portfolio/p2.jpg" alt="portfolio-2">
+                <a class="test-popup-link" href="/site-two/img/portfolio/p1.jpg">
+                  <img src="/site-two/img/portfolio/p2.jpg" alt="portfolio-2">
+                </a>
               </div>
               <div class="title py-4">
                 <h4 class="text-uppercase">Paint Wall</h4>
@@ -341,13 +348,46 @@
               </div>
             </div>
           </div>
-          <div class="col-lg4 col-md-6 col-sm-12 element-item latest">
+          <div class="col-lg4 col-md-6 col-sm-12 element-item popular">
             <div class="our-project">
               <div class="img">
                 <img src="/site-two/img/portfolio/p5.jpg" alt="portfolio-5">
               </div>
               <div class="title py-4">
                 <h4 class="text-uppercase">Multiple Fawn</h4>
+                <span class="text-secondary">Upcoming, Portfolio</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg4 col-md-6 col-sm-12 element-item following">
+            <div class="our-project">
+              <div class="img">
+                <img src="/site-two/img/portfolio/p6.jpg" alt="portfolio-6">
+              </div>
+              <div class="title py-4">
+                <h4 class="text-uppercase">Together Sign</h4>
+                <span class="text-secondary">Following, Portfolio</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg4 col-md-6 col-sm-12 element-item popular">
+            <div class="our-project">
+              <div class="img">
+                <img src="/site-two/img/portfolio/p7.jpg" alt="portfolio-7">
+              </div>
+              <div class="title py-4">
+                <h4 class="text-uppercase">Green Heaven</h4>
+                <span class="text-secondary">Upcoming, Portfolio</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg4 col-md-6 col-sm-12 element-item upcoming">
+            <div class="our-project">
+              <div class="img">
+                <img src="/site-two/img/portfolio/p8.jpg" alt="portfolio-8">
+              </div>
+              <div class="title py-4">
+                <h4 class="text-uppercase">Fly Male</h4>
                 <span class="text-secondary">Upcoming, Portfolio</span>
               </div>
             </div>
@@ -367,5 +407,8 @@
 
     <!-- isotope js library -->
     <script src="/site-two/vendor/isotope/isotope.min.js"></script>
+
+    <!-- custom js file -->
+    <script src="/site-two/js/main.js"></script>
 </body>
 </html>
